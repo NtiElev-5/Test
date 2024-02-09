@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- -->
+<html>
+<head>
+<style></style>
+<script src = "javas1.js"></script> <!-- Links to an external JavaScript file -->
+</head>
+<body>  
+<section class="">
+	<form>
+		<label for="name">Register Student</label><br><br>
+		<input type="text" id="name" class="" placeholder="First name*" required autofocus> <!-- Text input field for first name, is in focus when window loads--> 
+		<!-- required atribute ensures that the form can not be sumbited without the field being filled -->
+        <input type="text" id ="Lname"class="" placeholder="Last name*" required ><br> <!-- Text input field for last name -->
+		
+        <input type="email" id="Email" class="" placeholder="Email*" required > <!-- Email input field -->
+		<input type="text" class="" placeholder="Phone number"><br> <!-- Text input field for phone number -->
+		<input type="password" id="password" class="" placeholder="Password*" required > <!-- Password input field -->
+		<input type="password" id="confirm-password" class="" placeholder="Confirm Password*" onfocusout="confirmPassword()" required ><br>	<!-- Password confirmation input field -->
+		<!-- when the event onfocusout occurs a function runs and check whether the passwords match -->
+		
+		<input type="text" id="IDnr" class="" placeholder="YYMMDD - xxxx" onblur="validateIDnr(this)"><!-- Text input field for ID number -->
+		<select name="grade" class="year-select"> <!-- Dropdown menu for selecting grade -->
+			<option> Select Grade </option> <!-- Default option -->
+            <option> 1st </option>  
+            <option> 2nd </option>  
+            <option> 3rd </option>  
+        </select><br><br>
+        <button onclick="verifyPassword()"> Register </button><br> <!-- Button to register, though its currect task is to verify is the password meets criteria this can later be moved to the actual input-->
+		<button onclick="location.href='login.html'">Login</button> <!-- Button to navigate to login page -->
+	</form>    
+</section>
+ 
+</body>
+</html>
