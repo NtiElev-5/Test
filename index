@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!-- This website is a work in progress for a project assignment -->
+<html>
+<head>
+<style>
+
+</style>
+</head>
+<body>
+<h2>Login</h2>
+<h4>This website is a work in progress for a project assignmen</h4>
+
+<div class="login_signup">
+	<form action="/action_page.php">
+	  <label for="name">Username:</label><br>
+	  <input type="text" id="user" placeholder="Enter username here*" maxlength="20" required autofocus><br> //input is in focus the moment the window loads
+	  <label for=""password">Password:</label><br>
+	  <input type="password" id="password" placeholder="Enter password*" maxlength="10" required ><br><br>
+	  <input type="submit" value="Login">
+	  <button onclick="location.href='register.html'">Register</button>
+	</form> 
+</div>
+
+</body>
+</html>
